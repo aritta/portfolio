@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 In this repository you will find some projects of my python coding portfolio. 
 
