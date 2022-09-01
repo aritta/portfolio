@@ -163,7 +163,7 @@ else:
 
 from sklearn.linear_model import LogisticRegression
 
-filename = 'mmse_model.sav'
+filename = 'Virtual_Assistant_AD_diagnosis/Streamlit_app/data/mmse_model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 #Prep data 

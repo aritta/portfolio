@@ -194,8 +194,6 @@ if st.checkbox('Would you like to know more about the CNN model? 🧐'):
        st.write("The **CNN** model architecture")
        st.code(body, language="python")
        st.write('')
-       st.write("Model summary")
-       cnn_model.summary(print_fn=lambda x: st.text(x))
        st.write('The model used **250 batch size** and **15 epochs**.')
    with st.expander('How did the model perform during training?'):
        fig11 = go.Figure()
