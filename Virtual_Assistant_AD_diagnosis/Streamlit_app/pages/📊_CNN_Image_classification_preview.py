@@ -97,13 +97,13 @@ if st.button("Show me sample mri scan."):
 
 with st.expander('Step 1:'):
     st.write("Choose an MRI image of the test set for upload")
-    st.image("../data/Step1.png")
+    st.image("Virtual_Assistant_AD_diagnosis/Streamlit_app/data/Step1.png")
 with st.expander('Step 2:'):
     st.write("The app will provide an image of the MRI scan, predicted class (Non Demented, Very Mild Demented, Mild Demented or Moderate Demented) and the probability.")
-    st.image("../data/Step2.png")
+    st.image("Virtual_Assistant_AD_diagnosis/Streamlit_app/data/Step2.png")
 with st.expander('Step 3:'):
     st.write("The healthcare provider can access random selection of four images form the training set with the same class/diagnosis for comparison.")
-    st.image("../data/Step3.png")
+    st.image("Virtual_Assistant_AD_diagnosis/Streamlit_app/data/Step3.png")
 with st.expander('Show the code:'):
     st.code(cnn_classifier, language="python")
 
@@ -167,8 +167,8 @@ body = """model_C = Sequential([
     Dense(4, activation="softmax")
 ])"""
 
-model_history = pd.read_csv('../data/model_C_history.csv', delimiter=';', index_col=None, decimal=',')
-df_testing_model_C = pd.read_csv('../data/Testing_CNN_model.csv')
+model_history = pd.read_csv('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/model_C_history.csv', delimiter=';', index_col=None, decimal=',')
+df_testing_model_C = pd.read_csv('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/Testing_CNN_model.csv')
 #df_testing_model_C.drop(columns=['Unnamed: 0'], inplace = True)
 
 import plotly.graph_objects as go
@@ -179,7 +179,7 @@ st.header('Deep Learning model')
 #Model info 
 if st.checkbox('Would you like to know more about the CNN model? 🧐'):
    st.write('How does CNN work: 🧠')
-   st.image('../data/CNN_layers.png')
+   st.image('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/CNN_layers.png')
    st.write('')
    st.write("""
    CNN (convolutional neural networks) is a type of a deep learning models used for processing data that has a grid pattern(image). 
@@ -235,7 +235,7 @@ if st.checkbox('Would you like to know more about the CNN model? 🧐'):
        * Use much more layers and neurons!
             * E.g., reported studies with Inception-v4 & 497 layers - https://www.nature.com/articles/s41598-020-79243-9
        """
-       st.image('../data/activation_functions.png')
+       st.image('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/activation_functions.png')
        st.caption('Image credit - Spiced Acdemy')
    with st.expander('Resources'):
        st.write('Tensorflow image classification: https://www.tensorflow.org/tutorials/images/cnn')

@@ -16,7 +16,7 @@ st.title("Machine Learning Model for Prediction of Alzheimer's Disease Diagnosis
 
 
 #Insert dataframe with the data used for training the model 
-df = pd.read_csv('../data/alzheimers_data_clean.csv')
+df = pd.read_csv('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/alzheimers_data_clean.csv')
 df.drop(columns=['SES', 'MMSE'], inplace=True)
 
 # adjust the column names to more user friendly titles
@@ -227,7 +227,7 @@ st.write('')
 
 #Info about logistic regression 
 
-ML_LR_pred = pd.read_csv('../data/Testing_ML_LR_model.csv')
+ML_LR_pred = pd.read_csv('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/Testing_ML_LR_model.csv')
 
 bodyML = """ 
 #Separate the data in test and train
@@ -283,7 +283,7 @@ if st.checkbox('Would you like to know more about the model? 🧐'):
     with st.expander('Basics of Logistic Regression model'):
         st.markdown("""Logistic regression is a classification algorithm. It is used to predict a binary outcome based on a set of independent variables.
     In this model activation function (sigmoid function) returns a probability (between 0 and 1) of the event taking place (e.g. True/False). The prediction of the outcome is assigned depending if the value of probability is greater or smaller then the pre-defined threshold.""")
-        st.image('../data/LR_sketch.png')
+        st.image('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/LR_sketch.png')
     with st.expander('Resources'):
         st.write("Data source: https://www.kaggle.com/datasets/brsdincer/alzheimer-features")
 
