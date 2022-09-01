@@ -285,6 +285,7 @@ if st.checkbox('Would you like to know more about the model? 🧐'):
     In this model activation function (sigmoid function) returns a probability (between 0 and 1) of the event taking place (e.g. True/False). The prediction of the outcome is assigned depending if the value of probability is greater or smaller then the pre-defined threshold.""")
         st.image('Virtual_Assistant_AD_diagnosis/Streamlit_app/data/LR_sketch.png')
     with st.expander('Resources'):
+        st.write("ML model: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html")
         st.write("Data source: https://www.kaggle.com/datasets/brsdincer/alzheimer-features")
 
 
