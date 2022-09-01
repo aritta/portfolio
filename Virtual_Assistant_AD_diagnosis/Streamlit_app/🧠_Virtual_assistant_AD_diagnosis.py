@@ -18,7 +18,7 @@ st.sidebar.header("Welcome to the virtual assistant for diagnosis of Alzheimer's
 st.title("Virtual Assistant for Diagnosis of Alzheimer's disease")
 st.write("Demo app for machine learning - logistic regression and convolutional neural network (CNN) based predictions.")
 
-st.image("Logo2.png")
+st.image("Virtual_Assistant_AD_diagnosis/Streamlit_app/data/Logo2.png")
 st.write('Created by Arita Silapetere')
 
 st.write(' ')
