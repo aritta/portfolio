@@ -14,8 +14,17 @@ In this repository you will find some projects of my python coding portfolio.
     - Animation of the scatterplot depending on the year (matplotlib, seaborn, imageio)
     - Creating for loops 
     -Data visualization with slider to select the depicted year (plotly)
+    
+2) Movie recommender 
 
-2) Time series - future temperature predictions
+* Explore the user data (movie raitings)
+* Unsupervised learning - making predictions on movie recommendations based on user raitings (here used - Non-negative matrix factorization (NMF))
+
+Key tools:
+* data exploration - pandas, matplotlib, seaborn
+* model - sklearn.decomposition.NMF
+
+3) Time series - future temperature predictions
 
 * Get and clean temperature data from www.ecad.eu (chosen location - Riga, Latvia)
 * Build a baseline model - model the trend and seasonality
@@ -32,7 +41,7 @@ Key tools:
 * statsmodels.tsa.arima.model - Autoregressive Integrated Moving Average (ARIMA) Model
 * Facebook Prophet - timeseries predictions
 
-3) Virtual Assistant for Alzheimer's disease diagnosis
+4) Virtual Assistant for Alzheimer's disease diagnosis
 
 Virtual assistant comprises two programs. First is patient metric based diagnosis prediction using logistic regression model. Second is MRI image classification with convolutional neuronal network (CNN). 
 
