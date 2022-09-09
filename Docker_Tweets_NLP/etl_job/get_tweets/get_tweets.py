@@ -24,11 +24,11 @@ query = 'Emmanuel Macron lang:en -is:retweet'
 
 # Connect to mongo DB 
 
-client_mongo = pymongo.MongoClient(host="mongodb", port=27017)
+client_mongo = pymongo.MongoClient(host="mongodb", port=*****)
 db = client_mongo.twitter
 
 #Collect tweets
-EM_tweets = tweepy.Paginator(method = client.search_recent_tweets,tweet_fields=['text'], query=query).flatten(limit=30)
+EM_tweets = tweepy.Paginator(method = client.search_recent_tweets,tweet_fields=['text'], query=query).flatten(limit=10)
 print('Paginator Emmanuel Macron tweets check')
 for tweet in EM_tweets:
     print(tweet)
