@@ -14,12 +14,12 @@ from sqlalchemy import create_engine
 # 1. EXTRACT the tweets from mongodb
 
 # Create connections to databases
-client = pymongo.MongoClient(host="mongodb", port=27017)
+client = pymongo.MongoClient(host="mongodb", port=*****)
 db = client.twitter
 
 time.sleep(10) # seconds
 
-#Extract tweets 
+# Extract tweets 
 extracted_tweets = list(db.tweets.find())
 print(extracted_tweets)
 
@@ -51,10 +51,10 @@ print(df_EM.info())
 
 # To onnect to Postgres
 HOST = 'postgresdb'
-PORT = '5432' #port inside the container
+PORT = '****'
 DATABASE = 'postgres'
-USER = 'postgres'
-PASSWORD = 'postgres'
+USER = '********'
+PASSWORD = '********'
 
 # Load the tweets and the resulting sentimental analysis
 conn_string = f'postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}'
