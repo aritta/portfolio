@@ -1,0 +1,36 @@
+version: '3' # specify the version of the yml file - version 3
+services:  # each service will be a container as specified below
+    mongodb: # MongoDB as the first container 
+        image: mongo
+        ports:
+        - 27017:27017    
+    get_tweets: # Second container to collect the tweets
+        build: etl_job/get_tweets/ 
+        volumes: 
+        - ./etl_job/get_tweets/:/app 
+        depends_on:
+        - mongodb 
+        env_file: # Keys for twitter API
+        - credentials.env
+    etl: # Sentiment analysis container
+        build: etl_job/ 
+        volumes: 
+        - ./etl_job/:/app 
+        depends_on:
+        - mongodb
+        - postgresdb
+    postgresdb: #PostgresDB for saving the data after tweet sentiment analysis.
+        image: postgres
+        ports:
+        - 5555:5432 #mapping 5555 from my localhost to 5432 in the container
+        environment:
+        - POSTGRES_USER=postgres 
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=postgres
+    metabase:
+        image: metabase/metabase
+        ports:
+        - 3000:3000
+        depends_on:
+        - postgresdb
+         
