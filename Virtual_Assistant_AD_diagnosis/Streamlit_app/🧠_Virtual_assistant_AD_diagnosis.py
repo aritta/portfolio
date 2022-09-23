@@ -24,7 +24,7 @@ st.write('Created by Arita Silapetere')
 st.write(' ')
 st.write(' ')
 st.markdown("""
-Artificial intellgiance and Machine Learning have multiple applications in the healthcare indurty.
+Artificial Intelligence and Machine Learning have multiple applications in the healthcare industry. 
 The AI and ML can be employed for the analysis of the complex datasets and metrics of the patients, and to make diagnosis predictions and treatment recommendations. 
 These methods provide options for personlized, more efficient healthcare and are important part of the future of the patient care.
 \n
