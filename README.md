@@ -64,7 +64,7 @@ Key tools used within this project:
 * TensorFlow/Keras for building convolutional neuronal network for image classifier 
 * Streamlit for front-end app developemnt
 
-Have a look at the app: https://virtual-assistant-ad-diagnosisstreamlit-app-virtual-as-z46w5v.streamlitapp.com/
+Have a look at the app (recommended to use google chrome): https://virtual-assistant-ad-diagnosisstreamlit-app-virtual-as-iwclf9.streamlitapp.com/
 
 
 
