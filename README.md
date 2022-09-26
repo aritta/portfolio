@@ -4,24 +4,24 @@ In this repository you will find some projects of my python coding portfolio.
 
 1) Data Visualization
 
-* Basic work with data (here Gapminder datasets)
+* Data wrangling and analysis (here Gapminder datasets)
     - import files (csv, xlxs - using Pandas)
-    - manipulation of dataframes (using Pandas)
+    - datata wrangling (using Pandas)
     - removing NaN values (Pandas)
 
 * Data visualization: 
     - Scatter plot of correlation between fertility rate and life expectancy compared between countries (matplotlib, seaborn)
     - Animation of the scatterplot depending on the year (matplotlib, seaborn, imageio)
-    - Creating for loops 
-    -Data visualization with slider to select the depicted year (plotly)
+    - Creating - for loops 
+    - Data visualization with slider to select the depicted year (plotly)
 
 2) Tweet sentiment analysis
 
 Docker container pipeline - software that consist of 5 separate parts (microservices), which are connected to each other and can be launched or stopped with a single command.
 
-* Collecting tweets (with Twitter API) 
+* Collecting tweets (with Twitter API) - text mining
 * Storing tweets in MongoDB
-* Extracting tweets from MongoDB and apply sentiment analysis (NLP)
+* Extracting tweets from MongoDB, textprocessing and sentiment analysis (NLP)
 * Save the clean tweets and the results of sentiment analysis in PostgresDB
 * Display the tweet analysis in Metabase Dashboard
 
