@@ -160,7 +160,7 @@ else:
     print('The needed data has not been provided.')
 
 #Introduce the model 
-
+import sklearn
 from sklearn.linear_model import LogisticRegression
 
 filename = 'Virtual_Assistant_AD_diagnosis/Streamlit_app/data/mmse_model.sav'
